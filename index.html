@@ -6,10 +6,17 @@
 	<title>Inso</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <canvas id="canvas" style="position: absolute;" ></canvas>	
 <body>
-
+<!--CSS Spinner-->
+<div class="sk-folding-cube">
+	<div class="sk-cube1 sk-cube"></div>
+	<div class="sk-cube2 sk-cube"></div>
+	<div class="sk-cube4 sk-cube"></div>
+	<div class="sk-cube3 sk-cube"></div>
+  </div>
 	<header class="header">
 		<div class="container2 header-container">
 			<a class="logo">
@@ -260,9 +267,17 @@
 -->
 </body>
 <script>
-	
+	$(document).ready(function() {
+//Preloader
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.sk-folding-cube');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
  	let pageWidth = document.documentElement.scrollWidth;
-	let pageHeight = document.documentElement.scrollHeight+100;
+	let pageHeight = document.documentElement.scrollHeight+300;
 	 console.log(pageHeight); 
 	let c = init("canvas"),
   w = (canvas.width = pageWidth),
