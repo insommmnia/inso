@@ -809,6 +809,7 @@ nav.visible li:last-child a {
 }
 .social-item:not(:last-child){
     margin-right: 11px;
+    z-index: 91;
 }
 .social-link-tw{
     background-image: url(../img/twitter.svg);
