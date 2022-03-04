@@ -799,6 +799,7 @@ nav.visible li:last-child a {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.4;
+    z-index: 91;
 
 }
 .social-link:hover{
