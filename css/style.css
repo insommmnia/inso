@@ -807,6 +807,9 @@ nav.visible li:last-child a {
     background-color: #9a78d3;
     
 }
+.social-item{
+    z-index: 91;
+}
 .social-item:not(:last-child){
     margin-right: 11px;
     z-index: 91;
