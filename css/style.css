@@ -576,6 +576,13 @@ nav.visible li:last-child a {
     font-size: 24px;
     line-height: 0px;
 }
+.hero-title2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 65px;
+    margin-top: 25px;
+    color:#8969bdbe;
+}
 .hero-title {
     font-weight: 700;
     font-size: 60px;
